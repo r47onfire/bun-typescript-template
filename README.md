@@ -34,6 +34,7 @@ If you have a website (docs, demo, etc):
 1. put your html files in `website/`
 1. if there is more than just `index.html`, make sure to list them as entrypoints in `scripts/build-website.ts`
 1. there is a custom plugin that allows Markdown in elements that look like `<div markdown="block">markdown here</div>`
+1. uncomment the "push" event in `.github/workflows/website.yaml` if you want to automatically rebuild on every push (it is commented to prevent the workflow from instantly failing when you create the new repo from this template)
 
 If you don't have a website:
 
