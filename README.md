@@ -1,6 +1,6 @@
 # bun-typescript-template
 
-Quick template to get started with a TypeScript project using [Bun](https://bun.com) and [pnpm](https://pnpm.io) with Jest-style unit tests, possibly an NPM package, and/or a Github Pages site.
+Quick template to get started with a TypeScript project using [Bun](https://bun.com) with Jest-style unit tests, possibly an NPM package, and/or a Github Pages site.
 
 * Source files go in `src/`
 * Test files go in `test/`
@@ -11,8 +11,8 @@ Quick template to get started with a TypeScript project using [Bun](https://bun.
 Getting started:
 
 1. update the `package.json` fields: name, version, description, repository, keywords, author, license (and update the LICENSE file if license is different)
-1. to build: `pnpm build`
-1. to test website: `pnpm dev` and open <http://localhost:8000/>
+1. to build: `bun run build`
+1. to test website: `bun run dev` and open <http://localhost:8000/>
 
 ## NPM package
 
