@@ -1,12 +1,14 @@
 # bun-typescript-template
 
-Quick template to get started with a TypeScript project using [Bun](https://bun.com) with Jest-style unit tests, possibly an NPM package, and/or a Github Pages site.
+Quick template to get started with a TypeScript project using [Bun](https://bun.com) with Jest-style unit tests, possibly an NPM package, and/or a Github Pages site, optionally with TypeDoc documentation.
 
-* Source files go in `src/`
-* Test files go in `test/`
-* Build scripts and helpers go in `scripts/`
-* Build artifacts go in `dist/` - gitignore'd
-* Website build files go in `docs/` - gitignore'd
+- Source files go in `src/`
+- Test files go in `test/`
+- Build scripts and helpers go in `scripts/`
+- Website sources (raw HTML + website-only glue code) go in `website/`
+- Prose documentation guides go in `guides/`
+- Build artifacts go in `dist/` - gitignore'd
+- Website build files go in `docs/` - gitignore'd
 
 Getting started:
 
@@ -32,14 +34,17 @@ If you don't want to publish as an NPM package:
 If you have a website (docs, demo, etc):
 
 1. put your html files in `website/`
+1. put your markdown guides in `guides/`
 1. if there is more than just `index.html`, make sure to list them as entrypoints in `scripts/build-website.ts`
 1. there is a custom plugin that allows Markdown in elements that look like `<div markdown="block">markdown here</div>`
 1. uncomment the "push" event in `.github/workflows/website.yaml` if you want to automatically rebuild on every push (it is commented to prevent the workflow from instantly failing when you create the new repo from this template)
 
-If you don't have a website:
+If you don't have a website or documentation:
 
 1. delete the entire `website/` directory
 1. delete `.github/workflows/website.yaml`
+1. delete `typedoc.json`
 1. delete `scripts/build-website.ts`
 1. possibly merge the two build scripts
 1. delete the `build:website`, `clean-docs`, `dev`, `dev:watch`, and `dev:serve` scripts from `package.json`
+1. remove the website-only dependencies (markdown-it, typedoc, node-html-parser, etc)

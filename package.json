@@ -7,15 +7,23 @@
     "type": "module",
     "scripts": {
         "build": "bun run scripts/build.ts",
-        "build:website": "bun run --sequential clean-dist clean-docs prepare && bun run scripts/build-website.ts",
+        "build:website": "bun run --sequential clean:dist clean:docs prepare build:docs && bun run scripts/build-website.ts",
+        "build:docs": "bun typedoc",
         "dev": "bun run --parallel \"dev:*\"",
         "dev:serve": "python3 -m http.server -d docs",
-        "dev:watch": "bun nodemon -e js,json,ts,css,md,html -i docs -w src -w website -w scripts --exec \"bun run build:website\"",
+        "dev:watch": "bun nodemon -e js,json,ts,css,md,html -w . --exec \"bun run build:website\"",
         "test": "bun test",
         "test:watch": "bun test --watch",
         "prepare": "bun run build --minify",
-        "clean-dist": "rm -rf dist/*",
-        "clean-docs": "rm -rf docs/*"
+        "clean:dist": "rm -rf dist/*",
+        "clean:docs": "rm -rf docs/*"
+    },
+    "nodemonConfig": {
+        "ignore": [
+            "**/docs/**",
+            "**/dist/**",
+            "**/skills/**"
+        ]
     },
     "repository": {
         "type": "git",
@@ -35,5 +43,9 @@
         "node-html-parser": "^9.0.6",
         "nodemon": "^3.1.14",
         "prismjs": "^1.30.0"
+    },
+    "dependencies": {
+        "@skillit/typedoc": "^2.0.4",
+        "typedoc": "^0.28.20"
     }
 }

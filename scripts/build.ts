@@ -8,7 +8,7 @@ await build({
         entry: "[dir]/[name].[ext]",
         chunk: "[dir]/[hash].[ext]",
     },
-    minify: process.argv.includes('--minify'),
+    minify: process.argv.includes("--minify"),
     target: "browser",
 });
 console.log("Build OK");

@@ -11,17 +11,8 @@
         "strictNullChecks": true,
         "moduleResolution": "Bundler",
         "module": "ESNext",
-        "types": [
-            "bun",
-            "node",
-            "prismjs",
-        ],
-        "lib": [
-            "esnext",
-            "dom"
-        ],
+        "types": ["bun", "node", "prismjs"],
+        "lib": ["esnext", "dom"]
     },
-    "include": [
-        "./**/*.ts"
-    ]
+    "include": ["./**/*.ts"]
 }
