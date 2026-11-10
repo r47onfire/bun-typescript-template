@@ -4,11 +4,8 @@
   "workspaces": {
     "": {
       "name": "edit_me",
-      "dependencies": {
-        "@skillit/typedoc": "^2.0.4",
-        "typedoc": "^0.28.20",
-      },
       "devDependencies": {
+        "@skillit/typedoc": "^2.0.4",
         "@types/bun": "^1.4.4",
         "@types/markdown-it": "^14.2.0",
         "@types/markdown-it-attrs": "^4.1.3",
@@ -16,9 +13,10 @@
         "@types/prismjs": "^1.26.6",
         "markdown-it": "^15.0.3",
         "markdown-it-attrs": "^5.0.1",
-        "node-html-parser": "^9.0.6",
+        "node-html-parser": "^9.0.7",
         "nodemon": "^3.1.14",
         "prismjs": "^1.30.0",
+        "typedoc": "^0.28.20",
       },
     },
   },
@@ -143,7 +141,7 @@
 
     "ms": ["ms@2.1.3", "", {}, "sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA=="],
 
-    "node-html-parser": ["node-html-parser@9.0.6", "", { "dependencies": { "css-select": "^5.1.0", "entities": "^8.0.0" } }, "sha512-q3ETJ2gU+VlERyYbiJ5JQ6+mMVV1Bc6mZQ7MdJ30moq+h3oN0kQGj3rWDORaSX1SOLSkPbY/bN+sBzDlliVOBA=="],
+    "node-html-parser": ["node-html-parser@9.0.7", "", { "dependencies": { "css-select": "^5.1.0", "entities": "^8.0.0" } }, "sha512-0Io6nKYNN2e+QSoJFxU991Z8kX4H2Ogy3l14Ow0XxR2Wonk9l5qBonx1dYO97UyVfYJ1U9H0WHZOIZW6q5KPrA=="],
 
     "nodemon": ["nodemon@3.1.14", "", { "dependencies": { "chokidar": "^3.5.2", "debug": "^4", "ignore-by-default": "^1.0.1", "minimatch": "^10.2.1", "pstree.remy": "^1.1.8", "semver": "^7.5.3", "simple-update-notifier": "^2.0.0", "supports-color": "^5.5.0", "touch": "^3.1.0", "undefsafe": "^2.0.5" }, "bin": { "nodemon": "bin/nodemon.js" } }, "sha512-jakjZi93UtB3jHMWsXL68FXSAosbLfY0In5gtKq3niLSkrWznrVBzXFNOEMJUfc9+Ke7SHWoAZsiMkNP3vq6Jw=="],
 

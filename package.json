@@ -41,11 +41,9 @@
         "@types/prismjs": "^1.26.6",
         "markdown-it": "^15.0.3",
         "markdown-it-attrs": "^5.0.1",
-        "node-html-parser": "^9.0.6",
+        "node-html-parser": "^9.0.7",
         "nodemon": "^3.1.14",
-        "prismjs": "^1.30.0"
-    },
-    "dependencies": {
+        "prismjs": "^1.30.0",
         "@skillit/typedoc": "^2.0.4",
         "typedoc": "^0.28.20"
     }
