@@ -8,7 +8,7 @@
     "skipErrorChecking": true,
     "disableGit": true,
     // update this with your username and repository
-    "sourceLinkTemplate": "https://github.com/r47onfire/bun-typescript-template/blob/{gitRevision}/src/{path}#L{line}",
+    "sourceLinkTemplate": "https://github.com/r47onfire/bun-typescript-template/blob/{gitRevision}/{path}#L{line}",
     // "favicon": "", // Add icon
     "useTsLinkResolution": true,
     "ignoredHighlightLanguages": [
